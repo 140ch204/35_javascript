@@ -59,8 +59,8 @@
 
 // Exo 5
   //find
-    var navBar = document.getElementsByTagName("Header")[0];
-    var navBarLink = document.getElementsByTagName("Link")[0];
+    let navBar = document.getElementsByTagName("Header")[0];
+    let navBarLink = document.getElementsByTagName("Link")[0];
   //Init
     navBar.addEventListener("dblclick", toggleBootstrap );
   //Do
@@ -95,5 +95,13 @@
     };
 
 // Exo 7
-
-
+  // Find
+    let buttonRight = document.getElementsByClassName("btn btn-secondary my-2")[0];
+    let row = document.getElementsByClassName("row")[1];
+    console.log(row);
+  // Init
+    buttonRight.addEventListener("click", move );
+  // Do
+    function move() {
+      row.insertBefore(row.getElementsByClassName("col-md-4")[5], row.getElementsByClassName("col-md-4")[0]);
+    };
