@@ -100,8 +100,21 @@
     let row = document.getElementsByClassName("row")[1];
     console.log(row);
   // Init
-    buttonRight.addEventListener("click", move );
+    buttonRight.addEventListener("click", moveRight );
   // Do
-    function move() {
+    function moveRight() {
       row.insertBefore(row.getElementsByClassName("col-md-4")[5], row.getElementsByClassName("col-md-4")[0]);
+    };
+
+// Exo 8
+  // find
+    var left = document.getElementsByClassName("btn btn-primary my-2")[0];
+  // Init
+    left.addEventListener("click", moveLeft);
+  // Do
+    function moveLeft() {
+      left.removeAttribute("href");
+      for (let i = 0; i < 5; i++) {
+        row.insertBefore(row.getElementsByClassName("col-md-4")[5], row.getElementsByClassName("col-md-4")[0]);
+      }
     };
