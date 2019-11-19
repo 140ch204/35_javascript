@@ -109,12 +109,12 @@
 
 // Exo 8
   // find
-    var left = document.getElementsByClassName("btn btn-primary my-2")[0];
+    var buttonLeft = document.getElementsByClassName("btn btn-primary my-2")[0];
   // Init
-    left.addEventListener("click", moveLeft);
+    buttonLeft.addEventListener("click", moveLeft);
   // Do
     function moveLeft() {
-      left.removeAttribute("href");
+      buttonLeft.removeAttribute("href");
       for (let i = 0; i < 5; i++) {
         row.insertBefore(row.getElementsByClassName("col-md-4")[5], row.getElementsByClassName("col-md-4")[0]);
       }
