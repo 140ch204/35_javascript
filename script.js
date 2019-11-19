@@ -118,3 +118,5 @@
         row.insertBefore(row.getElementsByClassName("col-md-4")[5], row.getElementsByClassName("col-md-4")[0]);
       }
     };
+
+// exo 9
