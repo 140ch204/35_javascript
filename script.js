@@ -1,3 +1,4 @@
+//console.log(row); 
 // Exo 1 compteur click footer 
   // Find
   let theFooter = document.getElementsByTagName('footer')[0];
@@ -98,7 +99,7 @@
   // Find
     let buttonRight = document.getElementsByClassName("btn btn-secondary my-2")[0];
     let row = document.getElementsByClassName("row")[1];
-    console.log(row);
+
   // Init
     buttonRight.addEventListener("click", moveRight );
   // Do
